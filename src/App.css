@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #312e81);
+  min-height: 100vh;
+  color: white;
+}
+
+.app {
+  width: 900px;
+  max-width: 90%;
+  margin: auto;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 45px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin: 20px 0 10px;
+}
+
+.header p {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+.counter-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: 22px 28px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.counter-box div {
+  text-align: left;
+}
+
+.counter-box span {
+  display: block;
+  color: #cbd5e1;
+  margin-bottom: 5px;
+}
+
+.counter-box strong {
+  font-size: 32px;
+}
+
+button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #818cf8;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 30px 20px;
+  transition: 0.25s;
+  backdrop-filter: blur(10px);
+}
+
+.event-card:hover {
+  transform: translateY(-7px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.event-icon {
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #6366f1;
+  font-size: 25px;
+}
+
+.event-card h2 {
+  margin: 20px 0 8px;
+}
+
+.event-card p {
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.footer {
+  margin-top: 35px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .events {
+    grid-template-columns: 1fr;
+  }
+
+  .counter-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .counter-box div {
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+}
